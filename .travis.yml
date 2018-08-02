@@ -3,4 +3,4 @@ language: objective-c
 before_install:
     - brew update
     - brew install xctool
-script: xctool -xcodeproj TestCI.xcodeproj -scheme TestCI test
+script: xctool -project TestCI.xcodeproj -target TestCI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
