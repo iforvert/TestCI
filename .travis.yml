@@ -1,2 +1,6 @@
 
 language: objective-c
+before_install:
+    - brew update
+    - brew install xctool
+script: xctool -xcodeproj TestCI.xcodeproj -scheme TestCI test
